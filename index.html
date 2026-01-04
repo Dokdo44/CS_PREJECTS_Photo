@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Photography portfolio showcasing 100+ images across categorized galleries" />
+  <title>Archive - wjdrkdnj_.s</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.5'%3E%3Crect x='2' y='6' width='20' height='14' rx='2'/%3E%3Cpath d='M8 2v4M16 2v4M3 10h18'/%3E%3Ccircle cx='12' cy='14' r='3'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/exif-js@2.3.0/exif.js"></script>
+</head>
+<body>
+  <a href="#work" class="skip-link">Skip to main content</a>
+  <header class="top-nav">
+    <div class="brand">Archive</div>
+    <a href="https://www.instagram.com/wjdrkdnj_.s/" target="_blank" rel="noopener noreferrer" class="instagram-link" aria-label="Visit Instagram">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+      </svg>
+    </a>
+  </header>
+
+  <main>
+    <section id="work" class="section work-section">
+      <div class="grid" id="grid" aria-live="polite" aria-atomic="true"></div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-inner">
+      <button class="close" id="modal-close" aria-label="Close image viewer">×</button>
+      <button class="nav-btn prev" id="modal-prev" aria-label="Previous image">‹</button>
+      <button class="nav-btn next" id="modal-next" aria-label="Next image">›</button>
+      <figure class="modal-media">
+        <img id="modal-img" src="" alt="" />
+        <div class="image-counter" id="image-counter"></div>
+      </figure>
+      <div class="modal-exif" id="modal-exif"></div>
+      <div class="modal-meta">
+        <div class="modal-title" id="modal-title"></div>
+        <div class="modal-sub">
+          <span id="modal-category"></span>
+          <span class="divider">•</span>
+          <span id="modal-tags"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
